@@ -66,6 +66,9 @@ SECTIONS = [
         "UN confirms over 2,230 civilian deaths in Sudan",
         "Kenya arrests four after kidnapped girl, 4, is rescued",
         "Rwanda tightens safeguards for overseas child adoptions",
+        "South Africa reprimands Nigerian envoy over broadcast dispute",
+        "Guinea jails 224 over illegal gold mining",
+        "Ethiopia-Eritrea fighting reignites, war fears grow",
     ]),
     ("OCEANIA", [
         "Australia sanctions Israeli settlers and organisations",
@@ -136,7 +139,7 @@ def draw_section(draw, title, stories, x, y, width=310):
 
 def draw_sections(draw):
     # Each vertical column has two region blocks; Africa/Oceania have room to breathe.
-    columns = [((0, 12), (4, 5)), ((1, 8), (5, 6)), ((2, 8), (3, 8))]
+    columns = [((0, 12), (4, 8)), ((1, 8), (5, 6)), ((2, 8), (3, 8))]
     for col, blocks in enumerate(columns):
         x = 34 + col * 322
         y = 330
@@ -199,7 +202,7 @@ def make_page():
     centered(draw, "THE WORLD TODAY", 21, font(SERIF_B, 42), INK)
     centered(draw, "WEDNESDAY, 18 NOVEMBER 2026     •     WORLD EDITION", 68,
              font(SANS_B, 12), BLUE)
-    centered(draw, "47 STORIES  •  6 CONTINENTS", 86, font(SANS_B, 12), RED)
+    centered(draw, "50 STORIES  •  6 CONTINENTS", 86, font(SANS_B, 12), RED)
     draw.line((32, 102, 992, 102), fill=INK, width=2)
     draw_map(draw)
 

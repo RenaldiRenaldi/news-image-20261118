@@ -1,6 +1,6 @@
 # The World Today — 18 November 2026
 
-A deterministic 1024 × 1024 newspaper front page made with Pillow. The edition carries **47 stories across six continents**, led by the Manila Quad talks, with a hand-drawn locator map and three compact information strips: Market Pulse, Timeline of the Day, and Day in Numbers.
+A deterministic 1024 × 1024 newspaper front page made with Pillow. The edition carries **50 stories across six continents**, led by the Manila Quad talks, with a hand-drawn locator map and three compact information strips: Market Pulse, Timeline of the Day, and Day in Numbers.
 
 Run `python3 main.py`. The image is written to `out/entry.png`; set `MAKEFUN_OUTPUT_DIR` to choose another output directory. Rendering uses only Pillow and local DejaVu fonts and makes no network requests.
 
@@ -13,6 +13,9 @@ Run `python3 main.py`. The image is written to `out/entry.png`; set `MAKEFUN_OUT
 - Fiji declared a National State of Disaster amid El Niño drought pressures, [FBC News](https://www.fbcnews.com.fj/news/fiji-declares-national-state-of-disaster/) (18 November 2026).
 - Fiji's Consumer Council welcomed a review of the Food Safety Act, [FBC News](https://www.fbcnews.com.fj/news/consumer-council-welcomes-food-safety-act-review/) (18 November 2026).
 - Fiji commissioned an upgraded sub-divisional hospital serving Kadavu, [FBC News](https://www.fbcnews.com.fj/news/?pid=121846418) (18 November 2026).
+- South Africa reprimanded Nigeria's high commissioner over a broadcast dispute, [allAfrica](https://allafrica.com/stories/202611180083.html) (18 November 2026).
+- Guinea sentenced 224 people over illegal gold mining, [allAfrica](https://allafrica.com/stories/202611180083.html) (18 November 2026).
+- Fighting resumed along the Ethiopia–Eritrea border, [allAfrica](https://allafrica.com/stories/202611180083.html) (18 November 2026).
 
 ## Data notes
 
