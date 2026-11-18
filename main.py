@@ -18,27 +18,22 @@ SERIF_B = "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf"
 SECTIONS = [
     ("ASIA", [
         "Trump arrives Manila for Quad talks before China visit",
-        "Canada and China extend trade deals before APEC",
+        "Canada, China extend trade deals before APEC",
         "Cyclone Akvan: Andhra Pradesh, Odisha on high alert",
         "Modi proposes ASEAN e-visas and maritime cooperation",
-        "India re-elected to ITU Council for 2027–2030",
-        "Amazon pledges $7B for India's renewable energy",
+        "Amazon pledges $7B for India's renewables",
         "India wins 10th SAFF title, beats Pakistan 2–1",
-        "MS Dhoni retires from IPL, becomes CSK mentor",
         "Japan proposes Asian IEA, offers idle oil storage",
-        "Baidu chief warns of AI bubble ahead of APEC",
         "Xi calls for open trade at APEC CEO Summit",
-        "Xi backs efforts to ease Korean Peninsula tensions",
     ]),
     ("EUROPE", [
         "Ukraine strikes Crimean Bridge; Russia hits Kyiv bridges",
         "Britain sanctions Israeli settlement firms",
         "Cyberattack disables freezers in 7 European countries",
         "Finland approves world's first nuclear-waste repository",
-        "EU proposes €45B loan to shore up Ukraine's budget",
+        "EU proposes €45B loan for Ukraine's budget",
         "Zelensky accuses US of blocking paid missile deliveries",
-        "Germany's 2027 tax forecast hits record €1 trillion",
-        "Hungary and Northern Ireland draw 1–1 in Nations League",
+        "Germany forecasts record €1T tax take in 2027",
     ]),
     ("MIDDLE EAST", [
         "Iran attacks US radar in Bahrain with drones",
@@ -48,27 +43,24 @@ SECTIONS = [
         "Israel elects Eisenkot ally Matan Kahana as speaker",
         "Hormuz tanker attacked; 21 Indians evacuated",
         "Iran says tanker with 2M barrels sank in Hormuz",
-        "Gaza families return to kerosene stoves amid gas shortage",
     ]),
     ("AMERICAS", [
         "Dow plunges over 1,000 points intraday as US stocks fall",
         "California bars Waymo self-driving cars from freeways",
         "Microsoft services restored after 36-hour outage",
-        "Nvidia hires law firm to probe CEO-China spy allegation",
         "Amazon, Google to own nearly 30% of Anthropic after IPO",
         "Asif Merchant gets 27 years over Trump murder plot",
         "Voyager 1 nears one light-day from Earth",
         "SpaceX catches a falling Starship",
     ]),
     ("AFRICA", [
-        "DR Congo peace efforts falter amid eastern violence",
+        "DR Congo: eastern violence stalls peace efforts",
         "Sudan factories struggle to recover from war",
         "UN confirms over 2,230 civilian deaths in Sudan",
-        "Kenya arrests four after kidnapped girl, 4, is rescued",
         "Rwanda tightens safeguards for overseas child adoptions",
         "South Africa reprimands Nigerian envoy over broadcast dispute",
         "Guinea jails 224 over illegal gold mining",
-        "Ethiopia-Eritrea fighting reignites, war fears grow",
+        "Ethiopia-Eritrea clashes resume; war fears grow",
     ]),
     ("OCEANIA", [
         "Australia sanctions Israeli settlers and organisations",
@@ -108,15 +100,15 @@ def draw_map(draw):
     for px, py in [(641,157),(451,148),(530,176),(123,153),(455,185),(690,198)]:
         draw.ellipse((px-4, py-4, px+4, py+4), fill=RED, outline=PAPER, width=1)
     draw.text((736, 122), "THE DAY, ACROSS SIX CONTINENTS", font=font(SANS_B, 12), fill=BLUE)
-    draw.text((736, 145), "50 dispatches • one world map", font=font(SANS, 12), fill=INK)
+    draw.text((736, 145), "42 dispatches • one world map", font=font(SANS, 12), fill=INK)
     draw.text((736, 166), "Manila · Kyiv · Gulf · Suva", font=font(SANS, 12), fill=INK)
 
 
 def draw_section(draw, title, stories, x, y, width=310):
-    """One-line heads in compact columns; variable rows prevent clipping."""
+    """Larger wrapped heads with a small gap separating each dispatch."""
     draw.rectangle((x, y, x + width, y + 19), fill=BLUE)
     draw.text((x + 7, y + 2), title, font=font(SANS_B, 11), fill=(255, 255, 255))
-    f = font(SANS_B, 10)
+    f = font(SANS_B, 11)
     yy = y + 23
     for story in stories:
         # Fit every head inside its column and wrap only when necessary.
@@ -133,13 +125,14 @@ def draw_section(draw, title, stories, x, y, width=310):
             lines.append(line)
         for headline_line in lines:
             draw.text((x + 1, yy), headline_line, font=f, fill=INK)
-            yy += 11
+            yy += 12
+        yy += 2
     return yy
 
 
 def draw_sections(draw):
     # Each vertical column has two region blocks; Africa/Oceania have room to breathe.
-    columns = [((0, 12), (4, 8)), ((1, 8), (5, 6)), ((2, 8), (3, 8))]
+    columns = [((0, 8), (4, 7)), ((1, 7), (5, 6)), ((2, 7), (3, 7))]
     for col, blocks in enumerate(columns):
         x = 34 + col * 322
         y = 330
@@ -202,7 +195,7 @@ def make_page():
     centered(draw, "THE WORLD TODAY", 21, font(SERIF_B, 42), INK)
     centered(draw, "WEDNESDAY, 18 NOVEMBER 2026     •     WORLD EDITION", 68,
              font(SANS_B, 12), BLUE)
-    centered(draw, "50 STORIES  •  6 CONTINENTS", 86, font(SANS_B, 12), RED)
+    centered(draw, "42 STORIES  •  6 CONTINENTS", 86, font(SANS_B, 12), RED)
     draw.line((32, 102, 992, 102), fill=INK, width=2)
     draw_map(draw)
 

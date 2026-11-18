@@ -1,14 +1,12 @@
 # The World Today — 18 November 2026
 
-A deterministic 1024 × 1024 newspaper front page made with Pillow. The edition carries **50 stories across six continents**, led by the Manila Quad talks, with a hand-drawn locator map and three compact information strips: Market Pulse, Timeline of the Day, and Day in Numbers.
+A deterministic 1024 × 1024 newspaper front page made with Pillow. The edition carries **42 stories across six continents** (Asia 8, Europe 7, Middle East 7, Americas 7, Africa 7, Oceania 6), led by the Manila Quad talks, with a hand-drawn locator map and three compact information strips: Market Pulse, Timeline of the Day, and Day in Numbers. R2-FIX42 increases regional headline type to 11 pixels and adds space between dispatches.
 
 Run `python3 main.py`. The image is written to `out/entry.png`; set `MAKEFUN_OUTPUT_DIR` to choose another output directory. Rendering uses only Pillow and local DejaVu fonts and makes no network requests.
 
 ## Additional reporting verified for this revision
 
 - Xi urged free and open trade at the APEC CEO Summit, reported by Reuters via [GMA News](https://www.gmanetwork.com/news/money/economy/1009910/china-s-xi-calls-for-free-and-open-trade-at-apec-summit/story/) (18 November 2026).
-- China supports efforts to ease Korean Peninsula tensions, reported by Reuters via [Yahoo News Malaysia](https://malaysia.news.yahoo.com/south-korea-hopes-china-peace-043015022.html) (18 November 2026).
-- Four suspects were arrested after a four-year-old girl was rescued in Kenya, [Capital FM via allAfrica](https://allafrica.com/stories/202611180103.html) (18 November 2026).
 - Rwanda set new safeguards for children adopted abroad, [The New Times via allAfrica](https://allafrica.com/stories/202611180029.html) (18 November 2026).
 - Fiji declared a National State of Disaster amid El Niño drought pressures, [FBC News](https://www.fbcnews.com.fj/news/fiji-declares-national-state-of-disaster/) (18 November 2026).
 - Fiji's Consumer Council welcomed a review of the Food Safety Act, [FBC News](https://www.fbcnews.com.fj/news/consumer-council-welcomes-food-safety-act-review/) (18 November 2026).
