@@ -108,7 +108,7 @@ def draw_map(draw):
     for px, py in [(641,157),(451,148),(530,176),(123,153),(455,185),(690,198)]:
         draw.ellipse((px-4, py-4, px+4, py+4), fill=RED, outline=PAPER, width=1)
     draw.text((736, 122), "THE DAY, ACROSS SIX CONTINENTS", font=font(SANS_B, 12), fill=BLUE)
-    draw.text((736, 145), "47 dispatches • one world map", font=font(SANS, 12), fill=INK)
+    draw.text((736, 145), "50 dispatches • one world map", font=font(SANS, 12), fill=INK)
     draw.text((736, 166), "Manila · Kyiv · Gulf · Suva", font=font(SANS, 12), fill=INK)
 
 
