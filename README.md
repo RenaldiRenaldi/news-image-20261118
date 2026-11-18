@@ -1,5 +1,19 @@
 # The World Today — 18 November 2026
 
-A deterministic 1024 × 1024 Pillow newspaper front page covering 40 supplied headlines across six continents. It features a lead report on the Manila Quad talks, a hand-drawn map strip, continent-organized headlines, and a day-in-numbers panel.
+A deterministic 1024 × 1024 newspaper front page made with Pillow. The edition carries **47 stories across six continents**, led by the Manila Quad talks, with a hand-drawn locator map and three compact information strips: Market Pulse, Timeline of the Day, and Day in Numbers.
 
-Run with `python3 main.py`. The program writes `entry.png` under `out/` by default; set `MAKEFUN_OUTPUT_DIR` to choose another output directory. The image uses only local Pillow and DejaVu Sans fonts and requires no network access.
+Run `python3 main.py`. The image is written to `out/entry.png`; set `MAKEFUN_OUTPUT_DIR` to choose another output directory. Rendering uses only Pillow and local DejaVu fonts and makes no network requests.
+
+## Additional reporting verified for this revision
+
+- Xi urged free and open trade at the APEC CEO Summit, reported by Reuters via [GMA News](https://www.gmanetwork.com/news/money/economy/1009910/china-s-xi-calls-for-free-and-open-trade-at-apec-summit/story/) (18 November 2026).
+- China supports efforts to ease Korean Peninsula tensions, reported by Reuters via [Yahoo News Malaysia](https://malaysia.news.yahoo.com/south-korea-hopes-china-peace-043015022.html) (18 November 2026).
+- Four suspects were arrested after a four-year-old girl was rescued in Kenya, [Capital FM via allAfrica](https://allafrica.com/stories/202611180103.html) (18 November 2026).
+- Rwanda set new safeguards for children adopted abroad, [The New Times via allAfrica](https://allafrica.com/stories/202611180029.html) (18 November 2026).
+- Fiji declared a National State of Disaster amid El Niño drought pressures, [FBC News](https://www.fbcnews.com.fj/news/fiji-declares-national-state-of-disaster/) (18 November 2026).
+- Fiji's Consumer Council welcomed a review of the Food Safety Act, [FBC News](https://www.fbcnews.com.fj/news/consumer-council-welcomes-food-safety-act-review/) (18 November 2026).
+- Fiji commissioned an upgraded sub-divisional hospital serving Kadavu, [FBC News](https://www.fbcnews.com.fj/news/?pid=121846418) (18 November 2026).
+
+## Data notes
+
+Market Pulse pairs the Dow's 18 November close with dated market snapshots: [Amber Markets' 04:00 GMT report](https://lc.ambermarkets.com/daily-report/nov-18th-2026/) for gold, Bitcoin and EUR/USD; the [08:35 IST SMIFS morning note](https://smifs.com/uploads/SMIFS_Research_Morning_Note_18_November_2026_4f30c8c0f2.pdf) for Brent crude. Values are rounded for the strip. The timeline labels publisher post times converted to UTC, rather than claiming event start times. Day-in-numbers preserves the R2 figures and adds the 36-hour service outage, 2–1 SAFF result, €1 trillion German tax forecast and more than 2,230 Sudan civilian deaths.
