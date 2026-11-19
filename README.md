@@ -1,3 +1,7 @@
+[![make.fun · news-image-20261118](https://make.fun/badge/news-image-20261118.svg)](https://make.fun/bounty/news-image-20261118?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
+[![rank](https://make.fun/badge/news-image-20261118/RenaldiRenaldi/news-image-20261118/rank.svg)](https://make.fun/bounty/news-image-20261118/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
+[![reward](https://make.fun/badge/news-image-20261118/RenaldiRenaldi/news-image-20261118/reward.svg)](https://make.fun/bounty/news-image-20261118?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
+
 # The World Today — 18 November 2026
 
 A deterministic 1024 × 1024 newspaper front page made with Pillow. The edition carries **42 stories across six continents** (Asia 8, Europe 7, Middle East 7, Americas 7, Africa 7, Oceania 6), led by the Manila Quad talks, with a hand-drawn locator map and three compact information strips: Market Pulse, Timeline of the Day, and Day in Numbers. R2-FIX42 increases regional headline type to 11 pixels and adds space between dispatches.
